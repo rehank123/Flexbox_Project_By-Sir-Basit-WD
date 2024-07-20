@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .parent {
+            display: flex;
+            border: 2px solid red;
+            justify-content: center;
+            align-items: start;
+            width: 100%;
+            height: 200px;
+
+
+        }
+
+        .child {
+            border: 2px solid black;
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            text-align: center;
+            color: white;
+            font-size: larger;
+            background-color: red;
+
+        }
+
+        .child:nth-child(2) {
+            background-color: black;
+        }
+
+        .child:nth-child(4) {
+            background-color: black;
+        }
+
+
+
+
+
+
+        .parent1 {
+            display: flex;
+            border: 2px solid red;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+
+        }
+
+        .child1 {
+            border: 2px solid black;
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            text-align: center;
+            color: white;
+            font-size: larger;
+            background-color: red;
+
+        }
+
+
+
+        .child1:nth-child(2) {
+            background-color: black;
+        }
+
+        .child1:nth-child(4) {
+            background-color: black;
+        }
+
+
+
+
+
+
+
+        .parent2 {
+            display: flex;
+            border: 2px solid red;
+            justify-content: center;
+            align-items: end;
+            width: 100%;
+            height: 200px;
+
+        }
+
+        .child2 {
+            border: 2px solid black;
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            text-align: center;
+            color: white;
+            font-size: larger;
+            background-color: red;
+
+
+        }
+
+
+
+        .child2:nth-child(2) {
+            background-color: black;
+        }
+
+        .child2:nth-child(4) {
+            background-color: black;
+        }
+
+
+
+
+
+
+
+
+        .parent3 {
+            border: 2px solid red;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+
+
+
+        }
+
+        .child3 {
+            border: 2px solid black;
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            color: white;
+            font-size: larger;
+            background-color: red;
+
+
+
+
+
+        }
+
+
+
+        .child3:nth-child(2) {
+            background-color: black;
+        }
+
+        .child3:nth-child(4) {
+            background-color: black;
+        }
+
+
+
+
+
+        .parent4 {
+            border: 2px solid red;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+
+
+
+
+        }
+
+        .child4 {
+            border: 2px solid black;
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            color: white;
+            font-size: larger;
+            background-color: red;
+
+
+
+
+
+        }
+
+
+
+        .child4:nth-child(2) {
+            background-color: black;
+        }
+
+        .child4:nth-child(4) {
+            background-color: black;
+        }
+
+
+
+        .child3:nth-child(2) {
+            background-color: black;
+        }
+
+        .child3:nth-child(4) {
+            background-color: black;
+        }
+
+
+
+
+
+        .parent5 {
+            border: 2px solid red;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+
+        }
+
+        .child5 {
+            border: 2px solid black;
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            color: white;
+            font-size: larger;
+            background-color: red;
+
+        }
+
+
+        .child5:first-child() {
+            background-color: rgb(255, 0, 0);
+            
+
+
+        }
+
+        .child5:nth-child(2) {
+            background-color: rgb(0, 0, 0);
+            margin-left: 20%;
+        }
+
+        .child5:nth-child(3) {
+            background-color: red;
+            margin-left: 40%;
+
+        }
+
+        .child5:nth-child(4) {
+            background-color: black;
+            margin-left: 60%;
+        }
+
+        .child5:last-child{
+            background-color: rgb(255, 0, 0);
+            margin-left: 80%;
+        }
+
+
+
+
+
+
+
+        .parent6 {
+            border: 2px solid red;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: end;
+            flex-direction: column;
+
+        }
+
+        .child6 {
+            border: 2px solid black;
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            color: white;
+            font-size: larger;
+            background-color: red;
+
+        }
+
+
+        .child6:first-child() {
+            background-color: rgb(255, 0, 0);
+            
+
+
+        }
+
+        .child6:nth-child(2) {
+            background-color: rgb(0, 0, 0);
+            margin-right: 20%;
+        }
+
+        .child6:nth-child(3) {
+            background-color: red;
+            margin-right: 40%;
+
+        }
+
+        .child6:nth-child(4) {
+            background-color: black;
+            margin-right: 60%;
+        }
+
+        .child6:last-child{
+            background-color: rgb(255, 0, 0);
+            margin-right: 80%;
+        }
+
+
+
+
+
+        
+        .parent7 {
+            border: 2px solid red;
+            width: 100%;
+            height: 1200;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+        
+
+        }
+
+        .child7 {
+            border: 2px solid black;
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            color: white;
+            font-size: larger;
+            background-color: red;
+            
+        }
+
+
+
+       
+        .child7:first-child {
+            background-color: rgb(255, 0, 0);
+            margin-left: 0%;
+            
+        }
+
+        .child7:nth-child(2) {
+            background-color: rgb(0, 0, 0);
+            margin-left: 20%;
+        }
+
+        .child7:nth-child(3) {
+            background-color: red;
+            margin-left: 40%;
+
+        }
+
+        .child7:nth-child(4) {
+            background-color: black;
+            margin-left: 60%;
+        }
+
+
+        .child7:nth-child(5){
+            background-color: red;
+            margin-left: 80%;
+            
+
+        }
+
+        .child7:nth-child(6){
+            background-color: black;
+            margin-left: 94.5%;
+        }
+
+        .child7:nth-child(7){
+            background-color: red;
+            margin-left: 80%;
+
+        }
+
+        .child7:nth-child(8){
+            background-color: black;
+            margin-left: 60%;
+        }
+
+        .child7:nth-child(9){
+            background-color: red;
+            margin-left:40%
+
+        }
+
+        .child7:nth-child(10){
+            background-color: rgb(0, 0, 0);
+            margin-left:20%;
+
+        }
+         .child7:last-child{
+            background-color: rgb(255, 0, 0);
+
+        }
+
+
+
+
+        
+        
+
+        
+
+    
+        
+
+
+
+.mess{
+    margin-top: 20px;
+color: red;
+background-color: yellow;
+border-radius: 5px;
+border: black solid 2px;
+text-align: center;
+font-family: Times, serif;
+font-size: xx-large;
+line-height: 40px;
+
+}
+
+
+
+
+
+
+    </style>
+
+
+    <title>Flexbox</title>
+</head>
+
+<body>
+
+    <header style="font-size: 150px; background-color: blue; text-align:center; color: white;">Flexbox</header>
+
+
+    <div class="mess">Once you have opened my Project so <b>Please</b> Cheack from  <strong>Start to End</strong>.      <b><i>THANKS!</i></b></div>
+
+
+    <h2 style="margin-top: 30px; text-align:center; ">Jusjustify-content: center; and Align-Items: Start;</h2>
+    <div class="parent">
+        <div class="child">First</div>
+        <div class="child">Second</div>
+        <div class="child">Third</div>
+        <div class="child">Fourth</div>
+        <div class="child">Fifth</div>
+    </div>
+
+
+
+    <h2 style="margin-top: 30px; text-align:center;">Jusjustify-content: center; and Align-Item Center</h2>
+    <div class="parent1">
+        <div class="child1">First</div>
+        <div class="child1">Second</div>
+        <div class="child1">Third</div>
+        <div class="child1">Fourth</div>
+        <div class="child1">Fifth</div>
+    </div>
+
+
+
+
+
+
+    <h2 style="margin-top: 30px; text-align:center;">Jusjustify-content: center; and Align-Item End</h2>
+    <div class="parent2">
+        <div class="child2">First</div>
+        <div class="child2">Second</div>
+        <div class="child2">Third</div>
+        <div class="child2">Fourth</div>
+        <div class="child2">Fifth</div>
+    </div>
+
+
+
+
+
+    <h2 style="margin-top: 30px; text-align:center;">Flex-direction: column; and Align-Item Center</h2>
+    <div class="parent3">
+        <div class="child3">First</div>
+        <div class="child3">Second</div>
+        <div class="child3">Third</div>
+        <div class="child3">Fourth</div>
+        <div class="child3">Fifth</div>
+    </div>
+
+
+
+
+    <h2 style="margin-top: 30px; text-align:center;">Flex-direction: column-reverse; and Align-Item Center</h2>
+    <div class="parent4">
+        <div class="child4">First</div>
+        <div class="child4">Second</div>
+        <div class="child4">Third</div>
+        <div class="child4">Fourth</div>
+        <div class="child4">Fifth</div>
+    </div>
+
+
+
+
+
+    <h2 style="margin-top: 30px; text-align:center;">Left to Right | Right to Left</h2>
+    <div class="parent7">
+        <div class="child7">First</div>
+        <div class="child7">Second</div>
+        <div class="child7">Third</div>
+        <div class="child7">Fourth</div>
+        <div class="child7">Fifth</div>
+        <div class="child7">Sixth</div>
+        <div class="child7">Seventh</div>
+        <div class="child7">Eightth</div>
+        <div class="child7">Nineth</div>
+        <div class="child7">Tenth</div>
+        <div class="child7">Eleventh</div>
+        
+        
+    </div>
+    <h2 style="margin-top: 30px; text-align:center;">Left to Right</h2>
+    <div class="parent5">
+        <div class="child5">First</div>
+        <div class="child5">Second</div>
+        <div class="child5">Third</div>
+        <div class="child5">Fourth</div>
+        <div class="child5">Fifth</div>
+        
+    </div>
+    
+    
+    <h2 style="margin-top: 30px; text-align:center;">Right to Left</h2>
+    <div class="parent6">
+        <div class="child6">First</div>
+        <div class="child6">Second</div>
+        <div class="child6">Third</div>
+        <div class="child6">Fourth</div>
+        <div class="child6">Fifth</div>
+    </div>
+
+
+
+
+</body>
+
+</html>
